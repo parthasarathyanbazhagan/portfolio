@@ -7,24 +7,27 @@
 <title>A Parthasarathy | Computer Science Engineer</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
 <style>
 
+/* BODY & SECTIONS */
 body{
     background:#0b0f19;
     color:white;
+    font-family: 'Segoe UI', sans-serif;
 }
-
 section{
     padding:80px 0;
 }
 
-/* BRIGHT CARDS */
+/* CARDS */
 .card{
-    background:linear-gradient(145deg,#1c2742,#25345a);
+    background:linear-gradient(145deg,#1c2742,#2a3860);
     border:1px solid rgba(255,255,255,0.12);
     box-shadow:0 12px 28px rgba(0,0,0,0.45);
     transition:0.3s;
+    border-radius: 12px;
 }
 .card:hover{
     transform:translateY(-6px);
@@ -37,20 +40,16 @@ section{
     background:linear-gradient(145deg,#22305a,#2e3f73);
 }
 
-/* BRIGHT BADGES */
+/* BADGES */
 .badge{
     font-size:0.9rem;
     padding:8px 12px;
     margin:4px;
-}
-.badge.bg-primary{
-    background:#0d6efd !important;
-}
-.badge.bg-secondary{
-    background:#3b82f6 !important;   /* was dim → now bright blue */
+    border-radius: 0.75rem;
+    background:#0d6efd !important; /* uniform color for all badges */
 }
 
-/* EDUCATION TIMELINE */
+/* TIMELINE */
 .timeline{
     position:relative;
     margin-left:20px;
@@ -71,17 +70,44 @@ section{
     border-radius:50%;
 }
 
-/* education background */
+/* EDUCATION */
 #education{
     background:#0f172a;
 }
 
-/* STRONG TEXT VISIBILITY */
+/* TEXT COLORS */
 .text-secondary{
     color:#d1d9e6 !important;
 }
 .text-info{
     color:#66b2ff !important;
+}
+.text-primary{
+    color:#0d6efd !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#ffffff;
+    transition: 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#0d6efd;
+}
+
+footer{
+    background:#0d0f19;
+    color:#888;
+}
+
+/* SOCIAL ICONS HERO */
+.social-icons a{
+    font-size:1.5rem;
+    color:white;
+    margin:0 10px;
+    transition:0.3s;
+}
+.social-icons a:hover{
+    color:#0d6efd;
 }
 
 </style>
@@ -119,6 +145,12 @@ section{
 Computer Science Engineer | Java Developer | Entry-Level Software Engineer
 </p>
 
+<!-- SOCIAL ICONS -->
+<div class="social-icons mt-3">
+<a href="https://github.com/parthasarathyanbazhagan" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/sar007" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+
 <a href="resume.pdf" class="btn btn-primary btn-lg mt-3" download>
 Download Resume
 </a>
@@ -147,7 +179,10 @@ real-world applications and seeking an entry-level opportunity to grow in a coll
 <div class="col-md-4">
 <div class="card p-4 h-100 skill-box">
 <h5 class="text-info">Programming</h5>
-<p><span class="badge bg-primary">Java</span></p>
+<p>
+<span class="badge">Java</span>
+<span class="badge">OOP</span>
+</p>
 </div>
 </div>
 
@@ -155,9 +190,10 @@ real-world applications and seeking an entry-level opportunity to grow in a coll
 <div class="card p-4 h-100 skill-box">
 <h5 class="text-info">Frontend</h5>
 <p>
-<span class="badge bg-primary">HTML</span>
-<span class="badge bg-primary">CSS</span>
-<span class="badge bg-primary">JavaScript</span>
+<span class="badge">HTML</span>
+<span class="badge">CSS</span>
+<span class="badge">JavaScript</span>
+<span class="badge">Bootstrap</span>
 </p>
 </div>
 </div>
@@ -166,9 +202,10 @@ real-world applications and seeking an entry-level opportunity to grow in a coll
 <div class="card p-4 h-100 skill-box">
 <h5 class="text-info">Database & Tools</h5>
 <p>
-<span class="badge bg-primary">MySQL</span>
-<span class="badge bg-secondary">Eclipse</span>
-<span class="badge bg-secondary">VS Code</span>
+<span class="badge">MySQL</span>
+<span class="badge">Eclipse</span>
+<span class="badge">VS Code</span>
+<span class="badge">GitHub</span>
 </p>
 </div>
 </div>
@@ -212,23 +249,42 @@ real-world applications and seeking an entry-level opportunity to grow in a coll
 <h2 class="mb-4">Projects</h2>
 
 <div class="row g-4">
+
 <div class="col-md-6">
 <div class="card p-4 h-100">
-
 <h5 class="text-primary">IoT Based Advanced Battery Monitoring System</h5>
-
 <p class="text-secondary">
 Developed an IoT-based system to monitor battery voltage, current and temperature in real time.
 Implemented cloud connectivity and alert system to prevent overheating,
 overcharging and battery failure. Improved safety and efficiency using real-time analytics.
 </p>
-
 <p class="text-info">Technology: Arduino</p>
-
-</div>
 </div>
 </div>
 
+<div class="col-md-6">
+<div class="card p-4 h-100">
+<h5 class="text-primary">Student Management System</h5>
+<p class="text-secondary">
+Built a Java-based desktop application to manage student records, attendance, and grades.
+Implemented CRUD operations, search functionality, and reporting features.
+</p>
+<p class="text-info">Technology: Java, MySQL</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card p-4 h-100">
+<h5 class="text-primary">Library Management System</h5>
+<p class="text-secondary">
+Developed a system to manage library books, issue/return operations, and fine calculation.
+Implemented a user-friendly interface and used ArrayList for storage to efficiently manage library records.
+</p>
+<p class="text-info">Technology: Java</p>
+</div>
+</div>
+
+</div>
 </div>
 </section>
 
@@ -239,8 +295,8 @@ overcharging and battery failure. Improved safety and efficiency using real-time
 
 <div class="card p-4">
 <p class="text-secondary">
-Completed a hands-on internship at a product-based company gaining experience in
-embedded systems, hardware soldering and meter programming.
+Completed a hands-on internship at <a href="https://icdipl.net/" target="_blank" class="text-info fw-semibold">ICDIPL</a>, a product-based company, gaining experience in
+embedded systems, hardware soldering, and meter programming.
 Worked across departments to understand the full product lifecycle.
 Recognized for dedication and quick learning.
 </p>
@@ -256,9 +312,12 @@ Recognized for dedication and quick learning.
 <p class="text-secondary">📧 parthaparthasarathy544@gmail.com</p>
 <p class="text-secondary">📞 +91-9344324741</p>
 
-<a href="https://www.linkedin.com/in/sar007"
-class="btn btn-outline-light mt-2" target="_blank">
+<a href="https://www.linkedin.com/in/sar007" class="btn btn-outline-light mt-2" target="_blank">
 LinkedIn Profile
+</a>
+
+<a href="https://github.com/parthasarathyanbazhagan" class="btn btn-outline-light mt-2 ms-2" target="_blank">
+GitHub Profile
 </a>
 </div>
 </section>
@@ -272,6 +331,3 @@ LinkedIn Profile
 
 </body>
 </html>
-
-
-
